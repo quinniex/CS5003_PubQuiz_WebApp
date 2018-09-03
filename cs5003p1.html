@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8" />
+
+<head>
+    <title>Pub Quiz</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="cs5003p1.js"></script>
+    <link rel="stylesheet" href="cs5003p1.css">
+</head>
+
+<body>
+    <div id="container">
+
+      <div id="header">
+
+        <div id="title">
+            <h1>Ye Olde Pub Quiz</h1>
+        </div>
+
+
+        <div id="money"></div>
+
+
+<div id="countdown">
+  <div id="progressBar">
+     <div></div>
+  </div>
+</div>
+
+      </div>
+
+    <div id="message"></div>
+
+
+        <div id="generateQuiz">
+
+          <br/>
+            <br/>
+  <div>
+    <label for="userNick">Please choose your username: </label>
+    <input type="text" id="userNick" name="name">
+  </div>
+
+
+  <br/>
+    <br/>
+<div >
+  <p>Please enter the number (between 10 and 50) of questions you want:
+      <input type="number" id="number" min="10" max="50" step="1" value="10">
+  </p>
+</div>
+
+
+
+<div>
+  <label for="selectDifficulty">Please select level of difficulty: </label>
+  <select id="selectDifficulty">
+  <option value="all">Any Diffculty</option>
+  <option value="easy">Easy</option>
+  <option value="medium">Medium</option>
+  <option value="hard">Hard</option>
+  </select>
+
+  <br/>
+
+  <div id="check">
+      <input id="checkbox" type="checkbox" name="difficulty">Do you prefer an increasing difficulty level?
+  </div>
+
+  <br/>
+  <br/>
+
+  <label for="selectCategory">Please select category of questions: </label>
+  <select id="selectCategory">
+  <option value="all">Any Category</option>
+  <option value="11">Film</option>
+  <option value="12">Music</option>
+  <option value="21">Sports</option>
+  <option value="25">Art</option>
+  <option value="26">Celebrities</option>
+  </select>
+
+  <br/>
+  <br/>
+    <br/>
+
+  <label for="selectType">Please select type of questions: </label>
+  <select id="selectType">
+  <option value="all">Any Type</option>
+  <option value="multiple">Multiple Choice</option>
+  <option value="boolean">True/False</option>
+  </select>
+
+  <br/>
+    <br/>
+</div>
+
+
+            <button id="generate">
+              <span>Generate</span>
+            </button>
+
+        </div>
+
+
+
+          <div id="quizBox"></div>
+
+          <div id="board"></div>
+
+
+<div class="navBtn">
+  <button id="lifeline">
+      <span>50:50</span>
+  </button>
+
+  <button id="next">
+      <span>Next</span>
+  </button>
+
+  <button id="quit">
+      <span>Quit</span>
+  </button>
+
+  <button id="showBoard">
+      <span>Leaderboard</span>
+  </button>
+
+</div>
+
+<div class="startBtn">
+  <button id="start">
+     <span>Start Now</span>
+  </button>
+
+
+
+  <button id="back">
+     <span>Back</span>
+  </button>
+
+</div>
+
+
+
+
+    </div>
+
+</body>
+</html>
